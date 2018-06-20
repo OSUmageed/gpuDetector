@@ -14,7 +14,7 @@ Any version should work
 ## Installation
 ``` 
 make
-make install
+[sudo] make install
 ```
 
 This will install it to /usr/lib && /usr/include but if you don't have root you can just include the files in your project and link them in your makefile.
@@ -42,6 +42,8 @@ if(iHaveAGPU) {
 }
 
 ```
+
+Then compile your project with ``` -lgpudetect ```.
 
 The detector function begins assigning gpus to process number _initialRank_. 
 So, if there are 4 gpus on a node with 20 processes and _initialRank_ is set to 2, ranks 2, 3, 4, 5 will get gpus.
