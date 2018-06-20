@@ -43,6 +43,7 @@ runtesti: testi
 	@echo Delete local executable if you like
 
 clean:
+	rm -rf $(BINDIR)
 
 install: $(BINDIR)/libgpudetect.a 
 	cp $< /usr/lib/libgpudetect.a
