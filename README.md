@@ -20,9 +20,14 @@ make
 This will install it to /usr/lib && /usr/include but if you don't have root you can just include the files in your project and link them in your makefile.
 
 ## Test
-Test it out by running 
+Test it out by running
 ```
 make runtest
+```
+
+If you've installed it to your root already try:
+```
+make runtesti
 ```
 
 ## Usage
